@@ -1,0 +1,49 @@
+.button {
+  @include flex-center(true);
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: var(--border-radius-m);
+
+  &--color-transparent {
+    border: var(--border);
+
+    @include hover {
+      border-color: var(--color-accent);
+    }
+  }
+
+  &--color-black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    @include hover {
+      color: var(--color-white);
+      background-color: var(--color-accent);
+    }
+  }
+
+  &--size-small {
+    height: 41px;
+    padding: 12px 24px;
+  }
+
+  &--size-medium {
+    height: 62px;
+    padding: 20px 36px;
+  }
+
+  &--size-big {
+    height: 65px;
+    padding: 24px 48px;
+  }
+
+  &--shadow-small {
+    box-shadow: var(--shadow-transparent-s);
+  }
+
+  &--shadow-big {
+    box-shadow: var(--shadow-transparent-l);
+  }
+}

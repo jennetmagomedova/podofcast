@@ -14,17 +14,20 @@
   --border-radius-m: 8px;
   --border-radius-s: 4px;
 
-  --shadow-transparent: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+  --shadow-transparent-l: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+  --shadow-transparent-s: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
   --shadow-black: 10px 10px 0px 0px var(--color-black);
   --shadow-accent: 6px 6px 0px 0px var(--color-accent);
   --shadow-lightblue-l: 12px 12px 0px 0px var(--color-lightblue);
-  --shadow-lightblue-s: 10px 10px 0px 0px var(--color-lightblue);
+  --shadow-lightblue-m: 10px 10px 0px 0px var(--color-lightblue);
   --shadow-lightblue-s: 6px 6px 0px 0px var(--color-lightblue);
 
   --font-family-base: "Montserrat Alternates", sans-serif;
 
-  --container-width: clamp(1200px, 0.83vw, 1440px);
+  --container-width: clamp(1200px, 83vw, 1440px);
   --container-padding-x: 20px;
 
   --section-padding-y: 140px;
+
+  --transition-duration: 0.2s;
 }
