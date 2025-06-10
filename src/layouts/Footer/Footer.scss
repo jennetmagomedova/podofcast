@@ -1,0 +1,126 @@
+.footer {
+  padding-block: clamp(40px, 10.2vw, 140px) clamp(40px, 10.2vw, 80px);
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: clamp(20px, 5.1vw, 120px);
+    padding-bottom: clamp(40px, 10.2vw, 137px);
+    border-bottom: 0.5px solid var(--color-gray);
+
+    @include tablet {
+      justify-content: start;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: clamp(20px, 5.1vw, 40px);
+    max-width: 275px;
+  }
+
+  &__description {
+    font-size: 14px;
+  }
+
+  &__soc1als-list {
+    gap: 25px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: start;
+    gap: clamp(24px, 5.1vw, 93px);
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-link {
+      @include hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 7.69vw, 60px);
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-platforms {
+      gap: clamp(20px, 5.1vw, 38.5px);
+
+      .items__list-link {
+        height: 22px;
+      }
+    }
+
+    &-stores {
+      gap: 20px;
+
+      .items__list-link {
+        height: 36px;
+      }
+    }
+  }
+
+  &__extra {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 12px;
+    line-height: 1.6;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-link {
+      &:not(:last-child) {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        &::after {
+          content: "·";
+          width: 4px;
+          height: 100%;
+          color: var(--color-gray);
+          margin-inline: 10px;
+        }
+      }
+    }
+  }
+}

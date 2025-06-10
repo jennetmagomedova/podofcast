@@ -1,0 +1,13 @@
+.icons__list {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    height: 100%;
+    flex-shrink: 0;
+
+    @include hover {
+      transform: scale(1.2);
+    }
+  }
+}

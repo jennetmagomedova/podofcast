@@ -1,7 +1,6 @@
 body {
   position: relative;
-  display: flex;
-  flex-direction: column;
+
   font-family: var(--font-family-base);
   font-size: clamp(14px, 3.6vw, 16px);
   font-weight: 500;
@@ -9,6 +8,16 @@ body {
   line-height: 1.6;
   color: var(--color-gray);
   background-color: var(--color-white);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
@@ -57,4 +66,8 @@ a {
 
 :focus-visible {
   outline: 2px dashed var(--color-accent);
+}
+
+.text--accent {
+  color: var(--color-accent);
 }
